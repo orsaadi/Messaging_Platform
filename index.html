@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>WebSocket App</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <h1>WebSocket Are Cool</h1>
+    <div id="client-count"></div>
+
+    <div
+      id="messages-div"
+      class="messages-div"
+    ></div>
+
+    <div class="message-input-container">
+      <input
+        type="text"
+        id="message-input"
+        class="message-input"
+        placeholder="Type your message..."
+      />
+      <button
+        id="send-btn"
+        class="send-btn"
+      >
+        Send
+      </button>
+    </div>
+    <input
+      type="text"
+      id="usernameBox"
+      class="usernameBox"
+      placeholder="Enter Username..."
+    />
+    <h1>Voice Chat</h1>
+      <div class="controls">
+        <button id="startCall">Start Call</button>
+        <button id="endCall">End Call</button>
+      </div>
+      <div class="audio">
+        <audio
+          id="localAudio"
+          autoplay
+        ></audio>
+
+        <audio
+          id="remoteAudio"
+          autoplay
+        ></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
